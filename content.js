@@ -24,9 +24,11 @@ function getSelectedRadio(radio_name)
 
 function show()
 {
-  var checked_value=getSelectedRadio(document.forms.qtype.elements.type);
-  var value= checked_value.value;
+ // var checked_value=getSelectedRadio(document.forms.qtype.elements.type);
+ // var value= checked_value.value;
   //alert(value);
+  var dd = document.getElementById("dropdown");
+  var value=(dd.options[dd.selectedIndex]).value
   if(value=="multiple")
   {
      document.getElementById("mcq1").style.display="block";
@@ -42,6 +44,12 @@ function show()
    else if(value=="shortanswer")
    {
      document.getElementById("sa3").style.display="block";
+     document.getElementById("mcq1").style.display="none";
+     document.getElementById("tf2").style.display="none";
+   }
+    else if(value=="default")
+   {
+     document.getElementById("sa3").style.display="none";
      document.getElementById("mcq1").style.display="none";
      document.getElementById("tf2").style.display="none";
    }
