@@ -42,10 +42,10 @@ echo $OUTPUT -> header();
 </select>
 <!--<input type="radio" name="type" value="multiple" onclick="show()">multiple choice</input>--></br></br>
 <div id = "mcq1"  style="display:none"><p id="mcqp">Question:</p><textarea id="mcq" name="mcq" cols="100" rows="2"></textarea></br>
-<input type="radio" name="right" >option 1</input><input type = "text" id="opt1"></br>
-<input type="radio" name="right" >option 2</input><input type = "text" id="opt2"></br>
-<input type="radio" name="right" >option 3</input><input type = "text" id="opt3"></br>
-<input type="radio" name="right" >option 4</input><input type = "text" id="opt4"></br></br>
+<input type="radio" name="right" value="1">option 1</input><input type = "text" id="opt1" name="opt1"></br>
+<input type="radio" name="right" value="2">option 2</input><input type = "text" id="opt2" name="opt2"></br>
+<input type="radio" name="right" value="3">option 3</input><input type = "text" id="opt3" name="opt3"></br>
+<input type="radio" name="right" value="4">option 4</input><input type = "text" id="opt4" name="opt4"></br></br>
 <h3>Hint:</h3>Select the correct answer from the given options.
 </div>
 <!--<input type="radio" name="type" value="truefalse" onclick="show()">True or False</input><br></br>-->
