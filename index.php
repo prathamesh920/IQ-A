@@ -39,6 +39,7 @@ echo $OUTPUT -> header();
 <option value="multiple">Multiple choice</option>
 <option value="truefalse">True or False</option>
 <option value="shortanswer">Short answer</option>
+<option value="code">Code question</option>
 </select>
 <!--<input type="radio" name="type" value="multiple" onclick="show()">multiple choice</input>--></br></br>
 <div id = "mcq1"  style="display:none"><p id="mcqp">Question:</p><textarea id="mcq" name="mcq" cols="100" rows="2"></textarea></br>
@@ -59,6 +60,13 @@ True<input type = "radio" name="tf" value="true"></br>
 <p id="sap">Question:</p><textarea id="saq" name="saq" cols="100" rows="2"></textarea></br>
 <p>Answer:</p><textarea id="saa" name="saa" cols="100" rows="2"></textarea></br>
 </div>
+
+<div id="code4" style="display:none">
+<p id="codep">Programming Question:</p><textarea id="codeq" name="codeq" cols="100" rows="2"></textarea></br>
+<p>Number of inputs:</p><input type="text" id="codea" name="codea"></br>
+<p>Input sets:</p>
+</div>
+
 
 <input type="button" name="click" value="Submit" onclick="questionValidation()"></input>
 </form>
